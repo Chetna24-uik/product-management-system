@@ -1,15 +1,4 @@
 <?php
-/**
- * Product Analytics Page - Bar Chart Visualization
- * 
- * This page displays category-wise product distribution using Chart.js
- * 
- * Features:
- * - Fetches product data grouped by category from database
- * - Displays interactive bar chart
- * - Shows different colors for each category
- * - Provides navigation back to main product page
- */
 
 // Include database connection
 require "config/db.php";
@@ -295,3 +284,4 @@ const categoryChart = new Chart(ctx, {
 
 </body>
 </html>
+
