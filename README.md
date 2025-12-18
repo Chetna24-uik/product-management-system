@@ -108,9 +108,9 @@ The `products` table includes:
 
 ## Notes
 
-- Prices are displayed in Indian Rupees (₹)
+
 - All database operations use prepared statements for security
-- Responsive design works on mobile and desktop
 - Clean and modern UI with smooth animations
+
 
 
