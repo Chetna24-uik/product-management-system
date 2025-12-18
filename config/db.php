@@ -1,20 +1,4 @@
 <?php
-/**
- * Database Connection Configuration
- * 
- * This file establishes a connection to the MySQL database using PDO.
- * 
- * PDO (PHP Data Objects) Benefits:
- * - Protection against SQL injection through prepared statements
- * - Support for multiple database types
- * - Better error handling with exceptions
- * - Object-oriented interface
- * 
- * Make sure to:
- * 1. Create a database named 'crud_db' in phpMyAdmin
- * 2. Import the sql/database.sql file to create the products table
- * 3. Update credentials below if different from default XAMPP settings
- */
 
 // ================= DATABASE CREDENTIALS =================
 
@@ -59,3 +43,4 @@ try {
          4. Import sql/database.sql file to create tables");
 }
 ?>
+
