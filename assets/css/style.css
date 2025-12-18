@@ -1,9 +1,4 @@
-﻿/**
- * Product Management System - Custom CSS
- * Clean, Modern UI matching reference design
- */
 
-/* ==================== GLOBAL STYLES ==================== */
 
 * {
     margin: 0;
@@ -111,7 +106,6 @@ body {
     padding: 25px;
 }
 
-/* ==================== ADD PRODUCT FORM ==================== */
 
 .form-description {
     color: #6c757d;
@@ -179,8 +173,6 @@ body {
 .btn-add-product i {
     margin-right: 6px;
 }
-
-/* ==================== PRODUCT TABLE ==================== */
 
 .table-description {
     color: #6c757d;
@@ -337,8 +329,6 @@ body {
     color: #495057;
 }
 
-/* ==================== MODAL STYLES ==================== */
-
 .modal-content {
     border-radius: 12px;
     border: none;
@@ -388,8 +378,6 @@ body {
     background-color: #e0a800;
     color: #000;
 }
-
-/* ==================== CHART PAGE STYLES ==================== */
 
 .chart-header {
     text-align: center;
@@ -527,8 +515,6 @@ body {
     color: #343a40;
 }
 
-/* ==================== RESPONSIVE DESIGN ==================== */
-
 @media (max-width: 992px) {
     .form-row {
         grid-template-columns: 1fr;
@@ -610,3 +596,4 @@ body {
 .mb-30 {
     margin-bottom: 30px;
 }
+
