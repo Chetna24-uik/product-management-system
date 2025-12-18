@@ -1,0 +1,612 @@
+﻿/**
+ * Product Management System - Custom CSS
+ * Clean, Modern UI matching reference design
+ */
+
+/* ==================== GLOBAL STYLES ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8ebf3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== HEADER SECTION ==================== */
+
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-header h1 {
+    color: #6c63ff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.main-header h1 i {
+    margin-right: 15px;
+    font-size: 2.2rem;
+}
+
+.btn-analytics {
+    background-color: #00bcd4;
+    color: #000;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-analytics:hover {
+    background-color: #00acc1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+}
+
+.btn-analytics i {
+    margin-right: 8px;
+}
+
+/* ==================== CARD STYLES ==================== */
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: none;
+}
+
+.card-header {
+    padding: 18px 25px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.card-header i {
+    margin-right: 10px;
+}
+
+.card-header-green {
+    background-color: #28a745;
+}
+
+.card-header-blue {
+    background-color: #007bff;
+}
+
+.card-header-cyan {
+    background-color: #17a2b8;
+}
+
+.card-header-gray {
+    background-color: #6c757d;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+/* ==================== ADD PRODUCT FORM ==================== */
+
+.form-description {
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr auto;
+    gap: 15px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #495057;
+    font-size: 0.95rem;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+}
+
+.btn-add-product {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-add-product:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn-add-product i {
+    margin-right: 6px;
+}
+
+/* ==================== PRODUCT TABLE ==================== */
+
+.table-description {
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.product-table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.product-table thead th {
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-table thead th:first-child {
+    text-align: center;
+    width: 80px;
+}
+
+.product-table thead th:last-child {
+    text-align: center;
+    width: 220px;
+}
+
+.product-table tbody tr {
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.product-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.product-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.product-table tbody td {
+    padding: 18px 20px;
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+.product-table tbody td:first-child {
+    text-align: center;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.product-table tbody td:last-child {
+    text-align: center;
+}
+
+.price-text {
+    color: #28a745;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.category-badge {
+    background-color: #00bcd4;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.category-badge i {
+    font-size: 0.85rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+    color: white;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: #adb5bd;
+    margin-bottom: 20px;
+}
+
+.empty-state h5 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+/* ==================== MODAL STYLES ==================== */
+
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #ffc107;
+    color: #000;
+    border-bottom: none;
+    padding: 20px 25px;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.modal-body {
+    padding: 30px 25px;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 20px 25px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    color: #000;
+}
+
+/* ==================== CHART PAGE STYLES ==================== */
+
+.chart-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chart-header h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.chart-header h1 i {
+    margin-right: 15px;
+}
+
+.chart-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+    color: white;
+}
+
+.btn-back i {
+    margin-right: 8px;
+}
+
+.chart-info {
+    background-color: #e7f3ff;
+    border-left: 4px solid #007bff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.chart-info i {
+    color: #007bff;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.chart-info strong {
+    color: #495057;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.category-summary {
+    margin-top: 30px;
+}
+
+.category-summary h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    background-color: #e9ecef;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.summary-item i {
+    font-size: 1rem;
+}
+
+.total-summary {
+    background-color: #d4edda;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #155724;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.total-summary i {
+    font-size: 1.1rem;
+}
+
+.about-content {
+    line-height: 1.8;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.about-content strong {
+    color: #343a40;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 992px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn-add-product {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .product-table {
+        font-size: 0.85rem;
+    }
+    
+    .product-table thead th,
+    .product-table tbody td {
+        padding: 12px 10px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .btn-edit,
+    .btn-delete {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .chart-container {
+        height: 300px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.7s ease-out;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
